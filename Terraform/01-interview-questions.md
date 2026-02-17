@@ -2,20 +2,26 @@ ADVANCED:
 
 𝗧𝗘𝗥𝗥𝗔𝗙𝗢𝗥𝗠 𝗦𝗧𝗔𝗧𝗘 𝗙𝗜𝗟𝗘 𝗖𝗢𝗥𝗥𝗨𝗣𝗧𝗜𝗢𝗡 𝗥𝗘𝗖𝗢𝗩𝗘𝗥𝗬
 
+
 𝗦𝗰𝗲𝗻𝗮𝗿𝗶𝗼: Your terraform.tfstate file is corrupted or lost, causing infrastructure drift.
+
 
 ✔️ Use terraform state pull to recover the latest state.
 ✔️ Restore from Terraform Cloud or S3 version history.
 ✔️ Run terraform refresh cautiously to sync with real infra.
 ✔️ Store state files in S3 with versioning + DynamoDB locking
 
+
 𝗣𝗥𝗘𝗩𝗘𝗡𝗧𝗜𝗡𝗚 𝗧𝗘𝗥𝗥𝗔𝗙𝗢𝗥𝗠 𝗗𝗥𝗜𝗙𝗧 & 𝗠𝗔𝗡𝗨𝗔𝗟 𝗖𝗛𝗔𝗡𝗚𝗘𝗦
 
+
 𝗦𝗰𝗲𝗻𝗮𝗿𝗶𝗼: Unauthorized cloud console changes cause drift between Terraform & infra.
+
 
 ✔️ Run terraform plan frequently to detect drift.
 ✔️ Use terraform state list & terraform state show for insights.
 ✔️ Enforce IAM policies to block manual changes.
+
 
 𝗕𝗟𝗨𝗘-𝗚𝗥𝗘𝗘𝗡 𝗗𝗘𝗣𝗟𝗢𝗬𝗠𝗘𝗡𝗧 𝗨𝗦𝗜𝗡𝗚 𝗧𝗘𝗥𝗥𝗔𝗙𝗢𝗥𝗠
 
@@ -25,6 +31,7 @@ ADVANCED:
 ✔️ Deploy a Blue (new) environment while Green (old) stays live.
 ✔️ Shift traffic using DNS or Load Balancer failover.
 
+
 𝗦𝗘𝗖𝗨𝗥𝗘𝗟𝗬 𝗠𝗔𝗡𝗔𝗚𝗜𝗡𝗚 𝗦𝗘𝗖𝗥𝗘𝗧𝗦 𝗜𝗡 𝗧𝗘𝗥𝗥𝗔𝗙𝗢𝗥𝗠
 
 𝗦𝗰𝗲𝗻𝗮𝗿𝗶𝗼: Passing sensitive data like API keys & passwords securely.
@@ -33,6 +40,7 @@ ADVANCED:
 ✔️ Use AWS Secrets Manager, HashiCorp Vault, or SSM Parameter Store.
 ✔️ Pass secrets via environment variables (TF_VAR_*).
 
+
 𝗠𝗔𝗡𝗔𝗚𝗜𝗡𝗚 𝗟𝗔𝗥𝗚𝗘-𝗦𝗖𝗔𝗟𝗘 𝗜𝗡𝗙𝗥𝗔 𝗪𝗜𝗧𝗛 𝗧𝗘𝗥𝗥𝗔𝗙𝗢𝗥𝗠 𝗠𝗢𝗗𝗨𝗟𝗘𝗦
 
 𝗦𝗰𝗲𝗻𝗮𝗿𝗶𝗼: Codebase is too large & difficult to manage.
@@ -40,6 +48,7 @@ ADVANCED:
 ✔️ Break infra into reusable modules.
 ✔️ Use terraform get & terraform module update to refresh modules.
 ✔️ Store modules in a private registry or Git repo.
+
 
 𝗧𝗘𝗥𝗥𝗔𝗙𝗢𝗥𝗠 𝗠𝗨𝗟𝗧𝗜-𝗖𝗟𝗢𝗨𝗗 𝗦𝗧𝗥𝗔𝗧𝗘𝗚𝗬
 
